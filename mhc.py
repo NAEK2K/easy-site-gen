@@ -1,6 +1,9 @@
 import argparse
 from markdown import markdown
 import os
+from datetime import datetime
+
+start = datetime.now()
 
 parser = argparse.ArgumentParser(description="Arguments for MHC")
 parser.add_argument("--output", "-o", default="output")
@@ -51,3 +54,9 @@ for target in args.targets:
                 "</html>",
             )
             f.write(html_output)
+
+print(
+    "Generated file directory: ./{}\nElapsed Time: {}".format(
+        args.output, datetime.now() - start
+    )
+)
