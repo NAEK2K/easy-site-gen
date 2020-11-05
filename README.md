@@ -1,4 +1,4 @@
-# markdown-html-converter
+# easy-site-gen
 
 ## dependencies
 
