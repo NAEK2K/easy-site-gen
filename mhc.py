@@ -19,13 +19,14 @@ for target in args.targets:
     markdown_input = open(target, "r")
     html_output = open(args.output + "/" + target + ".html", "w+")
 
-    style = ""
+    style_output = ""
     if args.style:
-        style = open(args.style, "r")
+        style_file = open(args.style, "r")
+        style_output = style_file.read()
 
-    html_output.write(markdown.markdown(markdown_input.read()) + "\n" + style.read())
+    html_output.write(markdown.markdown(markdown_input.read()) + "\n" + style_output)
 
     markdown_input.close()
     html_output.close()
     if args.style:
-        style.close()
+        style_file.close()
