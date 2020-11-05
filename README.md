@@ -9,7 +9,7 @@
 
 ### basic usage
 
-`python3 mhc.py -t file.md`
+`python3 esg.py -t file.md`
 
 the default output folder is a folder called output
 
