@@ -21,5 +21,11 @@ the default output folder is a folder called output
 --output, -o
 - choose the output directory
 
+--header, -hr
+- choose a header (html) that will be present on all generated pages
+
+--footer, -f
+- choose a footer (html) that will be present on all generated pages
+
 --style, -s
 - css wrapped in a style tag that will be applied to the generated html
